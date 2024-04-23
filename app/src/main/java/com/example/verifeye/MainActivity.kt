@@ -3,6 +3,7 @@ package com.example.verifeye
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -41,10 +42,24 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_preferences -> Toast.makeText(this, "Preferences", Toast.LENGTH_SHORT).show()
                 R.id.nav_settings -> Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
-                R.id.nav_logout -> Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show()
+                R.id.nav_logout -> {
+                    Toast.makeText(this, "Logged out Successfully", Toast.LENGTH_SHORT).show()
+                    // Finish all activities and exit the app
+                    finishAffinity()
+                }
             }
             drawerLayout.closeDrawer(GravityCompat.START)
             true
+        }
+
+        // Handle back press using OnBackPressedCallback
+        onBackPressedDispatcher.addCallback(this) {
+            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                drawerLayout.closeDrawer(GravityCompat.START)
+            } else {
+                isEnabled = false
+                onBackPressedDispatcher.onBackPressed()
+            }
         }
     }
 
@@ -56,14 +71,5 @@ class MainActivity : AppCompatActivity() {
         }
         // Handle your other action bar items...
         return super.onOptionsItemSelected(item)
-    }
-
-    override fun onBackPressed() {
-        // Close drawer if open
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
     }
 }

@@ -27,12 +27,12 @@
 
         <!-- Search bar -->
         <androidx.appcompat.widget.SearchView
-            android:id="@+id/search_view"
+            android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/search_view"
             android:layout_margin="8dp"
-            android:queryHint="Search here..."
+            app:queryHint="Search here..."
             app:iconifiedByDefault="false"/>
 
         <!-- Buttons container -->
@@ -47,14 +47,14 @@
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button 1" />
+                android:text="@string/recommendations" />
 
             <!-- Button 2 -->
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button 2" />
+                android:text="@string/rankings" />
 
         </LinearLayout>
 

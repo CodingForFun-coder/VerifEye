@@ -24,4 +24,9 @@
     <string name="dont_have_account">No Account? </string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="search_here">Search</string>
+
+    <string name="recommendations">Recommendations</string>
+    <string name="rankings">Rankings and Stats</string>
+    <string name="discussion_forum">Discussion Forum</string>
+    <string name="education_center">Education Center</string>
 </resources>
