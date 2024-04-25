@@ -49,7 +49,6 @@ class RegisterActivity : AppCompatActivity() {
 
                 // Handle year
                 if (ddmmyyyy.length > 10) {
-                    // Ensures only 2 digits for day, 2 digits for month, and 4 digits for year are taken.
                     ddmmyyyy.delete(10, ddmmyyyy.length)
                 }
 
@@ -114,5 +113,3 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 }
-
-

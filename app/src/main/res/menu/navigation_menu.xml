@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/facts"
+        android:icon="@drawable/edu_fact"
+        android:title="@string/articles_stats" />
+    <item
+        android:id="@+id/videos"
+        android:icon="@drawable/edu_video"
+        android:title="@string/videos" />
+    <item
+        android:id="@+id/quizzes"
+        android:icon="@drawable/edu_quiz"
+        android:title="@string/quizzes" />
+    <item
+        android:id="@+id/resource_list"
+        android:icon="@drawable/edu_resource"
+        android:title="@string/resources" />
+</menu>

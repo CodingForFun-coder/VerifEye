@@ -1,7 +1,10 @@
 package com.example.verifeye
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.appcompat.widget.Toolbar
@@ -27,21 +30,31 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = findViewById(R.id.drawer_layout)
         navigationView = findViewById(R.id.nav_view)
 
-        // Initialize the ActionBarDrawerToggle
         drawerToggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(drawerToggle)
 
-        // Show the hamburger icon
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        // Sync the toggle state after onRestoreInstanceState has occurred
         drawerToggle.syncState()
+
+        val educationLayout = findViewById<LinearLayout>(R.id.educationLayout)
+
+        educationLayout.setOnClickListener {
+            val intent = Intent(this, EducationActivity::class.java)
+            startActivity(intent)
+        }
 
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_home -> Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+                R.id.nav_home -> {
+                    Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+
                 R.id.nav_preferences -> Toast.makeText(this, "Preferences", Toast.LENGTH_SHORT).show()
                 R.id.nav_settings -> Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+                R.id.nav_report -> Toast.makeText(this, "Report", Toast.LENGTH_SHORT).show()
+
                 R.id.nav_logout -> {
                     Toast.makeText(this, "Logged out Successfully", Toast.LENGTH_SHORT).show()
                     // Finish all activities and exit the app
@@ -52,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        // Handle back press using OnBackPressedCallback
+
         onBackPressedDispatcher.addCallback(this) {
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START)
@@ -64,12 +77,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Pass the event to ActionBarDrawerToggle, if it returns true,
-        // then it has handled the app icon touch event
         if (drawerToggle.onOptionsItemSelected(item)) {
             return true
         }
-        // Handle your other action bar items...
         return super.onOptionsItemSelected(item)
     }
 }

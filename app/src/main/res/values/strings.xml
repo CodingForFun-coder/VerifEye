@@ -10,6 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_preferences">Preferences</string>
     <string name="menu_settings">Settings</string>
+    <string name="menu_report">Report</string>
     <string name="menu_logout">Log Out</string>
     <string name="menu_login">Log In</string>
     <string name="first_name">First Name</string>
@@ -26,7 +27,17 @@
     <string name="search_here">Search</string>
 
     <string name="recommendations">Recommendations</string>
-    <string name="rankings">Rankings and Stats</string>
+    <string name="rankings">Stats</string>
     <string name="discussion_forum">Discussion Forum</string>
     <string name="education_center">Education Center</string>
+    <string name="recommendations_description">Personalized news recommendations</string>
+    <string name="rankings_description">Rankings and Stats on news outlets </string>
+    <string name="discussion_forum_description">Share insights on news outlets</string>
+    <string name="education_center_description">Learn strategies to evaluate news critically</string>
+
+    <string name="articles_stats">Facts</string>
+    <string name="videos">Videos</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="resources">Resources</string>
+
 </resources>
