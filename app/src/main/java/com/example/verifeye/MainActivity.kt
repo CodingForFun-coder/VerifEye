@@ -43,6 +43,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val discussionLayout = findViewById<LinearLayout>(R.id.discussionForumLayout)
+
+        discussionLayout.setOnClickListener {
+            val intent = Intent(this, DiscussionActivity::class.java)
+            startActivity(intent)
+        }
+
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {

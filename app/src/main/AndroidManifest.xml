@@ -15,6 +15,9 @@
         android:theme="@style/Theme.VerifEye"
         tools:targetApi="31">
         <activity
+            android:name=".DiscussionActivity"
+            android:exported="false" />
+        <activity
             android:name=".EducationActivity"
             android:exported="false" />
         <activity
@@ -31,8 +34,7 @@
             android:exported="false" /> <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>
