@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import android.webkit.WebChromeClient
 import android.webkit.WebSettings
 import android.webkit.WebView
-import android.widget.Button
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 class VideoFragment : Fragment() {
@@ -114,19 +112,5 @@ class VideoFragment : Fragment() {
             web.loadDataWithBaseURL(null, videoHtml, "text/html", "utf-8", null)
             web.webChromeClient = WebChromeClient()
         }
-    }
-
-    companion object {
-        private const val ARG_PARAM1 = "param1"
-        private const val ARG_PARAM2 = "param2"
-
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            VideoFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
     }
 }
