@@ -91,6 +91,8 @@
     <string name="videoLink">Media Institution: Crash Course Government and Politics #44</string>
     <string name="videoLink2">Identifying Bias</string>
 
-    <string name="forum">Forum</string>
+    <string name="topicTitle">Enter Title</string>
+    <string name="topicDescription">Enter Description</string>
+    <string name="postTopic">Post</string>
 
 </resources>

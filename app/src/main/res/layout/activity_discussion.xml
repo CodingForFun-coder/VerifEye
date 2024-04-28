@@ -37,20 +37,20 @@
             android:id="@+id/topicTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter title"/>
+            android:hint="@string/topicTitle"/>
 
         <EditText
             android:id="@+id/topicDescription"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:hint="Enter description"
+            android:hint="@string/topicDescription"
             android:inputType="textMultiLine"/>
 
         <Button
             android:id="@+id/postTopic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Post"/>
+            android:text="@string/postTopic"/>
 
     </LinearLayout>
 
