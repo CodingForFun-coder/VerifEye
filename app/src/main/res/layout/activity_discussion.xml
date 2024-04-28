@@ -18,39 +18,37 @@
         android:paddingBottom="10dp"
         android:paddingTop="10dp"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:id="@+id/newPostedTopics"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <!-- Posted topics will be added here -->
-            </LinearLayout>
-        </ScrollView>
-
-        <EditText
-            android:id="@+id/topicTitle"
+        <LinearLayout
+            android:id="@+id/newPostedTopics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/topicTitle"/>
+            android:orientation="vertical">
+            <!-- Posted topics will be added here -->
+        </LinearLayout>
+    </ScrollView>
 
-        <EditText
-            android:id="@+id/topicDescription"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:hint="@string/topicDescription"
-            android:inputType="textMultiLine"/>
+    <EditText
+        android:id="@+id/topicTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/topicTitle" />
 
-        <Button
-            android:id="@+id/postTopic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/postTopic"/>
+    <EditText
+        android:id="@+id/topicDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="@string/topicDescription"
+        android:inputType="textMultiLine"/>
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/postTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/postTopic"/>
 
+</LinearLayout>

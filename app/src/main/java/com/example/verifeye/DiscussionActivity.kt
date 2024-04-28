@@ -5,10 +5,11 @@ import android.os.Bundle
 import android.view.Gravity
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-
+import androidx.core.content.ContextCompat
 
 class DiscussionActivity : AppCompatActivity() {
     private lateinit var topicTitle: EditText
@@ -30,6 +31,31 @@ class DiscussionActivity : AppCompatActivity() {
         val title = topicTitle.text.toString()
         val description = topicDescription.text.toString()
 
+        val username = "Pedro Rangel" // This should be dynamically fetched from user profile data
+
+        val userLayout = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+            setPadding(10, 10, 10, 10)
+        }
+
+        val userAvatar = ImageView(this).apply {
+            layoutParams = LinearLayout.LayoutParams(100, 100)
+            setImageDrawable(ContextCompat.getDrawable(this@DiscussionActivity, R.drawable.nav_profile)) // Ensure you have an 'avatar_placeholder' drawable
+        }
+
+        val tvUsername = TextView(this).apply {
+            text = username
+            textSize = 18f
+            layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT).apply {
+                marginStart = 10
+            }
+        }
+
+        userLayout.addView(userAvatar)
+        userLayout.addView(tvUsername)
+        newPostedTopics.addView(userLayout)
+
         val tvTitle = TextView(this).apply {
             text = title
             setTypeface(null, Typeface.BOLD)
@@ -49,3 +75,4 @@ class DiscussionActivity : AppCompatActivity() {
         topicDescription.text.clear()
     }
 }
+
