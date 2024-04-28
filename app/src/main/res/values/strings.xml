@@ -13,6 +13,7 @@
     <string name="menu_report">Report</string>
     <string name="menu_logout">Log Out</string>
     <string name="menu_login">Log In</string>
+    <string name="login_title">Login</string>
     <string name="first_name">First Name</string>
     <string name="register">Register</string>
     <string name="last_name">Last Name</string>
@@ -36,8 +37,58 @@
     <string name="education_center_description">Learn strategies to evaluate news critically</string>
 
     <string name="articles_stats">Facts</string>
+    <string name="articleTitle">How To Detect Bias In News Media</string>
+    <string name="subHeaderText">Media have tremendous power in setting cultural guidelines and in shaping political discourse. It is essential that news media are challenged to be fair and accurate. The first step in challenging biased news coverage is documenting bias. </string>
+    <string name="articleTitle2">Who are the sources?</string>
+    <string name="regText">Be aware of the political perspective of the sources used in a story. Media over-rely on "official" (government, corporate and establishment think tank) sources. For instance, FAIR found that in 40 months of Nightline programming, the most frequent guests were Henry Kissinger, Alexander Haig, Elliott Abrams and Jerry Falwell. Progressive and public interest voices were grossly underrepresented.</string>
+    <string name="articleTitle3">Is there a lack of diversity?</string>
+    <string name="regText2">What is the race and gender diversity at the news outlet you watch compared to the communities it serves? How many producers, editors or decision-makers at news outlets are women, people of color or openly gay or lesbian? In order to fairly represent different communities, news outlets should have members of those communities in decision-making positions.</string>
+    <string name="articleTitle4">From whose point of view is the news reported?</string>
+    <string name="regText3">Political coverage often focuses on how issues affect politicians or corporate executives rather than those directly affected. Economics coverage usually examines how events impact stockholders rather than workers or consumers.</string>
+    <string name="articleTitle5">Are there double standards?</string>
+    <string name="regText4">Do media hold some people to one standard while using a different standard for other groups? Youth of color who commit crimes are referred to as "superpredators," whereas adult criminals who commit white-collar crimes are often portrayed as having been tragically been led astray. Think tanks partly funded by unions are often identified as "labor-backed" while think tanks heavily funded by business interests are usually not identified as "corporate-backed."</string>
+    <string name="articleTitle6">Do stereotypes skew coverage?</string>
+    <string name="regText5">Does coverage of the drug crisis focus almost exclusively on African Americans, even though the vast majority of drug users are white? Does coverage of women on welfare focus overwhelmingly on African-American women even though the majority of welfare recipients are not black? Are lesbians portrayed as "man-hating" and gay men portrayed as "sexual predators"?</string>
+    <string name="articleTitle7">What are the unchallenged assumptions?</string>
+    <string name="regText6">Often, the most essential message of a story is not explicitly stated. For instance, in coverage of women on welfare, the age at which a woman had her first child will often be reported—the implication being that the womans sexual "promiscuity," rather than institutional economic factors, are responsible for her plight.</string>
+    <string name="articleTitle8">Is the language loaded?</string>
+    <string name="regText7">When media adopt loaded terminology, they help shape public opinion. For instance, the media often use the right-wing buzzword "racial preference" to refer to affirmative action programs. Polls show that this decision dramatically affects how the issue is perceived.</string>
+    <string name="articleTitle9">Is there a lack of context?</string>
+    <string name="regText8">Coverage of so-called "reverse discrimination" usually fails to focus on any of the institutional factors that give power to prejudice—such as more significant issues of economic inequality and institutional racism. Coverage of hate speech against gays and lesbians often fails to mention increases in gay-bashing and how the two might be related.</string>
+    <string name="articleTitle10">Do the headlines and stories match?</string>
+    <string name="regText9">Reporters typically dont write headlines, which can have a significant impact since many people only skim headlines. </string>
+    <string name="articleTitle11">Are stories on important issues featured prominently?</string>
+    <string name="regText10">Look at where stories appear. Newspaper articles on the most widely read pages (front pages and the editorial pages) and lead stories on television and radio will significantly influence public opinion.</string>
+    <string name="source">Source: FAIRNESS and ACCURACY IN REPORTING (FAIR)</string>
+
     <string name="videos">Videos</string>
+    <string name="videoTitle">Videos</string>
+    <string name="videoDescription">Watch videos on how to detect bias in news media</string>
+    <string name="youtubeTitle">Media Bias: Subtle (and Not So Subtle) Ways Journalists Slant the News</string>
+    <string name="youtubeTitle2">The Media Bias Nobody is Talking About | Robert Reich</string>
+    <string name="youtubeTitle3">Ways To Detect Bias In News</string>
+    <string name="youtubeTitle4">The Myth of a Free Press: Media Bias Explained</string>
+
     <string name="quizzes">Quizzes</string>
+    <string name="totalQuestions">Total Questions: </string>
+    <string name="total_questions">Total questions: %1$d</string>
+    <string name="score_message">Score is %1$d out of %2$d</string>
+    <string name="restart">Restart</string>
+    <string name="question">This will be the question</string>
+    <string name="ansA">Answer A</string>
+    <string name="ansB">Answer B</string>
+    <string name="ansC">Answer C</string>
+    <string name="ansD">Answer D</string>
+    <string name="submit">Submit</string>
+
+
     <string name="resources">Resources</string>
+    <string name="resourceTitle">Additional Resources</string>
+    <string name="addArticle">Additional Articles</string>
+    <string name="articleLink">Identifying Bias</string>
+    <string name="articleLink2">Evaluating Sources</string>
+    <string name="addVideo">Additional Videos</string>
+    <string name="videoLink">Media Institution: Crash Course Government and Politics #44</string>
+    <string name="videoLink2">Identifying Bias</string>
 
 </resources>

@@ -9,13 +9,11 @@
     tools:openDrawer="start"
     tools:context=".MainActivity">
 
-    <!-- The main content layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Include the Toolbar -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -54,7 +52,6 @@
             android:padding="16dp">
 
             <!--  Recommendations button-->
-            <!--  Recommendations button-->
             <LinearLayout
                 android:id="@+id/recommendationsLayout"
                 android:layout_width="match_parent"
@@ -63,7 +60,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground"
-                android:padding="16dp"
+                android:padding="12dp"
                 android:layout_marginBottom="8dp">
 
                 <TextView
@@ -83,6 +80,7 @@
                     android:textColor="@android:color/darker_gray"
                     android:gravity="center"/>
             </LinearLayout>
+
             <!-- Rankings button -->
             <LinearLayout
                 android:id="@+id/rankLayout"
@@ -92,7 +90,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground"
-                android:padding="16dp"
+                android:padding="12dp"
                 android:layout_marginBottom="8dp">
 
                 <TextView
@@ -122,7 +120,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground"
-                android:padding="16dp"
+                android:padding="12dp"
                 android:layout_marginBottom="8dp">
 
                 <TextView
@@ -152,7 +150,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground"
-                android:padding="16dp"
+                android:padding="12dp"
                 android:layout_marginBottom="8dp">
 
                 <TextView
@@ -188,6 +186,3 @@
         android:fitsSystemWindows="true" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
-
-
-

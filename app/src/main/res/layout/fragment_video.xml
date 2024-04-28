@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_marginTop="155dp"
+    tools:context=".VideoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/videoTitle"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/subHeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/videoDescription"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:id="@+id/youtubeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/youtubeTitle"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/firstYoutube"/>
+
+        <TextView
+            android:id="@+id/youtubeTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/youtubeTitle2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/secondYoutube"/>
+
+        <TextView
+            android:id="@+id/youtubeTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/youtubeTitle3"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/thirdYoutube"/>
+
+        <TextView
+            android:id="@+id/youtubeTitle4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/youtubeTitle4"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/fourthYoutube"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

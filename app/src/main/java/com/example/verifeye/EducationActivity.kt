@@ -1,46 +1,37 @@
 package com.example.verifeye
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.fragment.app.Fragment
+import com.example.verifeye.databinding.ActivityEducationBinding // Corrected binding class
 
 class EducationActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityEducationBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_education)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding = ActivityEducationBinding.inflate(layoutInflater)
 
+        setContentView(binding.root)
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        replaceFragment(FactsFragment())
+
+        binding.bottomNavigationView.setOnItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
-                R.id.facts -> {
-                    // Handle home navigation
-                    true
-                }
-                R.id.videos -> {
-                    // Handle dashboard navigation
-                    true
-                }
-                R.id.quizzes -> {
-                    // Handle dashboard navigation
-                    true
-                }
-                R.id.resource_list -> {
-                    // Handle notifications navigation
-                    true
-                }
-                else -> false
+                R.id.facts -> replaceFragment(FactsFragment())
+                R.id.videos -> replaceFragment(VideoFragment())
+                R.id.quizzes -> replaceFragment(QuizFragment())
+                R.id.resource_list -> replaceFragment(ResourceFragment())
             }
+            true
         }
+    }
 
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.main, fragment)
+            .commit()
     }
 }
