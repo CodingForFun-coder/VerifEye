@@ -31,7 +31,7 @@ class DiscussionActivity : AppCompatActivity() {
         val title = topicTitle.text.toString()
         val description = topicDescription.text.toString()
 
-        val username = "Pedro Rangel" // This should be dynamically fetched from user profile data
+        val username = "Pedro Rangel"
 
         val userLayout = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL

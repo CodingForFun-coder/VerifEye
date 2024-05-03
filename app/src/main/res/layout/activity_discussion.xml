@@ -36,12 +36,15 @@
         android:id="@+id/topicTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/topicTitle" />
+        android:autofillHints=""
+        android:hint="@string/topicTitle"
+        android:inputType="textCapWords" />
 
     <EditText
         android:id="@+id/topicDescription"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:autofillHints=""
         android:hint="@string/topicDescription"
         android:inputType="textMultiLine"/>
 

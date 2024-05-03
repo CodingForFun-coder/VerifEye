@@ -95,4 +95,7 @@
     <string name="topicDescription">Enter Description</string>
     <string name="postTopic">Post</string>
 
+    <string name="details_format">Bias: %1$s, Factual: %2$s, Credibility: %3$s</string>
+
+
 </resources>
