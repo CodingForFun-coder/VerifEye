@@ -3,7 +3,6 @@ package com.example.verifeye
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
@@ -21,7 +20,6 @@ import okhttp3.Request
 import okhttp3.Response
 import org.json.JSONArray
 import java.io.IOException
-
 
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
@@ -70,22 +68,13 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = mediaBiasInfoAdapter
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String): Boolean {
-                return false
-            }
+            override fun onQueryTextSubmit(query: String): Boolean = false
 
             override fun onQueryTextChange(newText: String): Boolean {
-                if (!newText.isEmpty()) {
-                    recyclerView.visibility =
-                        View.VISIBLE
-                    mediaBiasInfoAdapter.filter.filter(newText)
-                } else {
-                    recyclerView.visibility = View.GONE
-                }
+                mediaBiasInfoAdapter.filter.filter(newText)
                 return true
             }
         })
-
 
         loadMediaBiasData()
 

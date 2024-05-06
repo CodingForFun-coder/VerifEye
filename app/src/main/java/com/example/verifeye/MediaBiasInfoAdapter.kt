@@ -1,6 +1,5 @@
 package com.example.verifeye
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,21 +26,9 @@ internal class MediaBiasInfoAdapter(private var mediaList: List<MediaBiasInfo>) 
 
     override fun onBindViewHolder(holder: MediaViewHolder, position: Int) {
         val media = mediaListFiltered[position]
-
-        // Remove "- Bias and Credibility" from the name before setting the text
-        val displayName = media.name.replace(" – Bias and Credibility", "").trim()
-        holder.nameTextView.text = displayName
-
-        holder.itemView.setOnClickListener {
-            val context = holder.itemView.context
-            val intent = Intent(context, DetailActivity::class.java).apply {
-                putExtra("MediaBiasInfo", media) // Make sure MediaBiasInfo implements Serializable
-            }
-            context.startActivity(intent)
-        }
+        holder.nameTextView.text = media.name
+        holder.detailsTextView.text = holder.itemView.context.getString(R.string.details_format, media.bias, media.factual, media.credibility)
     }
-
-
 
     override fun getItemCount(): Int = mediaListFiltered.size
 
