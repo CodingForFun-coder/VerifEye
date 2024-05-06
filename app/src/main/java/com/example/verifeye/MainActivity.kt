@@ -3,6 +3,7 @@ package com.example.verifeye
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
@@ -20,6 +21,7 @@ import okhttp3.Request
 import okhttp3.Response
 import org.json.JSONArray
 import java.io.IOException
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
@@ -68,13 +70,22 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = mediaBiasInfoAdapter
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String): Boolean = false
+            override fun onQueryTextSubmit(query: String): Boolean {
+                return false
+            }
 
             override fun onQueryTextChange(newText: String): Boolean {
-                mediaBiasInfoAdapter.filter.filter(newText)
+                if (!newText.isEmpty()) {
+                    recyclerView.visibility =
+                        View.VISIBLE
+                    mediaBiasInfoAdapter.filter.filter(newText)
+                } else {
+                    recyclerView.visibility = View.GONE
+                }
                 return true
             }
         })
+
 
         loadMediaBiasData()
 
@@ -100,7 +111,7 @@ class MainActivity : AppCompatActivity() {
         val request = Request.Builder()
             .url("https://political-bias-database.p.rapidapi.com/MBFCdata")
             .get()
-            .addHeader("X-RapidAPI-Key", "2bee28da37msh91c49b1497646dap1aa6afjsnd8860462fe6a")
+            .addHeader("X-RapidAPI-Key", "6caf27fbfbmshc9f00e8276785a9p19872ejsn7aa648e46cc1")
             .addHeader("X-RapidAPI-Host", "political-bias-database.p.rapidapi.com")
             .build()
 

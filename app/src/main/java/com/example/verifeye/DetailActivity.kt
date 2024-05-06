@@ -1,6 +1,7 @@
 package com.example.verifeye
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -9,14 +10,17 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        val nameTextView = findViewById<TextView>(R.id.nameDetailTextView)
-        val detailsTextView = findViewById<TextView>(R.id.detailsDetailTextView)
+        val nameTextView: TextView = findViewById(R.id.nameDetailTextView)
+        val detailsTextView: TextView = findViewById(R.id.detailsDetailTextView)
 
-        val mediaBiasInfo = intent.getSerializableExtra("MediaBiasInfo") as MediaBiasInfo?
+        val mediaBiasInfo = intent.extras?.getSerializable("MediaBiasInfo") as? MediaBiasInfo
 
-        // Populate the TextViews
         mediaBiasInfo?.let {
-            nameTextView.text = it.name
+            Log.d("DetailActivity", "Original Name: ${it.name}")
+            val cleanName = it.name.replace(" – Bias and Credibility", "").trim()
+            Log.d("DetailActivity", "Cleaned Name: $cleanName")
+
+            nameTextView.text = cleanName
             val details = "Bias: ${it.bias}\nFactual: ${it.factual}\nCredibility: ${it.credibility}"
             detailsTextView.text = details
         }
