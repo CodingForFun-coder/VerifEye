@@ -83,6 +83,5 @@
             android:text = "@string/videoLink2"
             android:textColor="@color/teal_700"
             android:textSize="20sp" />
-
     </LinearLayout>
 </ScrollView>

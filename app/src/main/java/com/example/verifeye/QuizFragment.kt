@@ -10,7 +10,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 
-
 class QuizFragment : Fragment(), View.OnClickListener {
 
     private var selectedButton: Button? = null
@@ -86,8 +85,6 @@ class QuizFragment : Fragment(), View.OnClickListener {
         }
     }
 
-
-
     private fun loadNewQuestion() {
         questionTextView?.text = QuestionAnswer.question[currentQuestionIndex]
         val choices = QuestionAnswer.choices[currentQuestionIndex]
@@ -113,7 +110,6 @@ class QuizFragment : Fragment(), View.OnClickListener {
             .show()
     }
 
-
     private fun restartQuiz() {
         score = 0
         currentQuestionIndex = 0
@@ -128,5 +124,4 @@ class QuizFragment : Fragment(), View.OnClickListener {
         totalQuestionsTextView?.text = getString(R.string.total_questions, totalQuestion)
 
     }
-
 }

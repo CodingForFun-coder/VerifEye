@@ -284,6 +284,5 @@
             android:textSize="15sp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp" />
-
     </LinearLayout>
 </ScrollView>

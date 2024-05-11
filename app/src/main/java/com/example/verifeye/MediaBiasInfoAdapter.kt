@@ -77,5 +77,4 @@ internal class MediaBiasInfoAdapter(private var mediaList: List<MediaBiasInfo>) 
             }
         }
     }
-
 }

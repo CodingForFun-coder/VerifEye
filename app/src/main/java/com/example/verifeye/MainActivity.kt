@@ -48,6 +48,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val statsAndRecommendationLayout = findViewById<LinearLayout>(R.id.statsAndRecommendationLayout)
+
+        statsAndRecommendationLayout.setOnClickListener {
+            val intent = Intent(this, StatsAndRecommendationActivity::class.java)
+            startActivity(intent)
+        }
+
+
         val discussionLayout = findViewById<LinearLayout>(R.id.discussionForumLayout)
 
         discussionLayout.setOnClickListener {

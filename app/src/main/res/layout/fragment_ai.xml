@@ -49,8 +49,5 @@
             android:background="?attr/selectableItemBackgroundBorderless"
 
             />
-
-
     </RelativeLayout>
-
 </RelativeLayout>
