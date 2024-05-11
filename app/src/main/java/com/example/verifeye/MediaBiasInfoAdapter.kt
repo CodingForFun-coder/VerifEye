@@ -41,8 +41,6 @@ internal class MediaBiasInfoAdapter(private var mediaList: List<MediaBiasInfo>) 
         }
     }
 
-
-
     override fun getItemCount(): Int = mediaListFiltered.size
 
     fun updateData(newMediaList: List<MediaBiasInfo>?) {

@@ -13,6 +13,10 @@
         android:icon="@drawable/edu_quiz"
         android:title="@string/quizzes" />
     <item
+        android:id="@+id/ai_questions"
+        android:icon="@drawable/edu_ai"
+        android:title="@string/ai_questions" />
+    <item
         android:id="@+id/resource_list"
         android:icon="@drawable/edu_resource"
         android:title="@string/resources" />

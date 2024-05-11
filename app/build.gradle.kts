@@ -55,4 +55,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation (libs.appcompat.v160)
+    implementation (libs.material.v180)
+    implementation(libs.okhttp)
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+
 }

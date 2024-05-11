@@ -28,11 +28,11 @@
     <string name="search_here">Search</string>
 
     <string name="recommendations">Recommendations</string>
-    <string name="rankings">Stats</string>
+    <string name="rankings">Stats and Recommendation</string>
     <string name="discussion_forum">Discussion Forum</string>
     <string name="education_center">Education Center</string>
     <string name="recommendations_description">Personalized news recommendations</string>
-    <string name="rankings_description">Rankings and Stats on news outlets </string>
+    <string name="rankings_description">Recommendation and Stats on news outlets </string>
     <string name="discussion_forum_description">Share insights on news outlets</string>
     <string name="education_center_description">Learn strategies to evaluate news critically</string>
 
@@ -81,6 +81,7 @@
     <string name="ansD">Answer D</string>
     <string name="submit">Submit</string>
 
+    <string name="ai_questions">AI Help</string>
 
     <string name="resources">Resources</string>
     <string name="resourceTitle">Additional Resources</string>
@@ -97,5 +98,8 @@
 
     <string name="details_format">Bias: %1$s, Factual: %2$s, Credibility: %3$s</string>
 
+    <string name="right_leaning">Right Leaning</string>
+    <string name="center_leaning">Center Leaning</string>
+    <string name="left_leaning">Left Leaning</string>
 
 </resources>

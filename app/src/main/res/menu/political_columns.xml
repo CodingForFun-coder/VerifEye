@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/right_leaning"
+        android:icon="@drawable/column_right"
+        android:title="@string/right_leaning" />
+    <item
+        android:id="@+id/center_leaning"
+        android:icon="@drawable/column_center"
+        android:title="@string/center_leaning" />
+    <item
+        android:id="@+id/left_leaning"
+        android:icon="@drawable/column_left"
+        android:title="@string/left_leaning" />
+</menu>

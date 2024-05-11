@@ -46,36 +46,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!--  Recommendations button-->
-            <LinearLayout
-                android:id="@+id/recommendationsLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:clickable="true"
-                android:focusable="true"
-                android:background="?attr/selectableItemBackground"
-                android:padding="12dp"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/recommendations"
-                    android:textColor="@color/teal_700"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/recommendations_description"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray"
-                    android:gravity="center"/>
-            </LinearLayout>
-
             <!-- Rankings button -->
             <LinearLayout
                 android:id="@+id/rankLayout"

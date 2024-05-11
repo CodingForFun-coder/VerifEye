@@ -4,10 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.textfield.TextInputEditText
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.textfield.TextInputEditText
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -97,7 +97,6 @@ class RegisterActivity : AppCompatActivity() {
     private fun setupSignUpButton() {
         val signUpButton: Button = findViewById(R.id.signUpButton)
         signUpButton.setOnClickListener {
-            // Intent to navigate to the MainActivity
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 

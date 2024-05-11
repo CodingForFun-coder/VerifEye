@@ -41,7 +41,7 @@ class DiscussionActivity : AppCompatActivity() {
 
         val userAvatar = ImageView(this).apply {
             layoutParams = LinearLayout.LayoutParams(100, 100)
-            setImageDrawable(ContextCompat.getDrawable(this@DiscussionActivity, R.drawable.nav_profile)) // Ensure you have an 'avatar_placeholder' drawable
+            setImageDrawable(ContextCompat.getDrawable(this@DiscussionActivity, R.drawable.nav_profile))
         }
 
         val tvUsername = TextView(this).apply {

@@ -24,6 +24,7 @@ class EducationActivity : AppCompatActivity() {
                 R.id.videos -> replaceFragment(VideoFragment())
                 R.id.quizzes -> replaceFragment(QuizFragment())
                 R.id.resource_list -> replaceFragment(ResourceFragment())
+                R.id.ai_questions -> replaceFragment(AiFragment())
             }
             true
         }
